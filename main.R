@@ -59,11 +59,31 @@ myMatrix = matrix(myVec, 3, 4)
 # --- Indexing ---
 # Indexes in R start at 1
 
+# Indexing vectors
 vec1 = c("just", "call", "Batman", "or", 911)
 vec1[1]
 vec1[1:3]
+vec1[c(F, F, T, F, T)]
 
+# Indexing Lists
 auxList = list(TRUE, "String", 71)
 myList = list(food = c(1, "burguer", "with fries"), c(TRUE, F, T), innerList = auxList)
+myList[1]
 myList[2]
+myList[[2]]
+myList$innerList
 
+# Indexing Data Frames
+df
+df[3,2]
+df$col1
+df[2]
+df[,2]
+df$col1[-1]
+
+# Indexing Matrices
+myMatrix
+myMatrix[1, 3]
+myMatrix[4]
+myMatrix[3,]
+myMatrix[,4]
