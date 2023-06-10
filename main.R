@@ -39,3 +39,31 @@ vec4 = as.factor(c("male", "female"))
 
 vec5 = c(1, TRUE, F)
 vec6 = c(5.2, "Gummy Bear", TRUE, 2)
+
+# --- Lists ---
+# Hold different data types, are multidimensional and recursive
+
+myList = list(vec1, vec2, "Teddy Bear", list(1, 2, vec3))
+
+# --- Data Frames ---
+
+df = data.frame(col1 = c(1, 2, 3, 4), col2 = c("A", "B", "C", "D"))
+View(df)
+
+# --- Matrices ---
+# Only contain a single class of data 
+
+myVec = c(1, 5, 10, "a", "b")
+myMatrix = matrix(myVec, 3, 4)
+
+# --- Indexing ---
+# Indexes in R start at 1
+
+vec1 = c("just", "call", "Batman", "or", 911)
+vec1[1]
+vec1[1:3]
+
+auxList = list(TRUE, "String", 71)
+myList = list(food = c(1, "burguer", "with fries"), c(TRUE, F, T), innerList = auxList)
+myList[2]
+
