@@ -101,3 +101,11 @@ mySumFunction(-2, 8.5)
 # Default
 ?mean
 mean(c(1, 2, 5.4, 8, -12))
+
+# --- Packages ---
+
+install.packages("ggplot2") # Downloads package in your machine
+
+library(ggplot2) # Uses the library
+
+ggplot2:: # Searches for functions from the package
