@@ -87,3 +87,17 @@ myMatrix[1, 3]
 myMatrix[4]
 myMatrix[3,]
 myMatrix[,4]
+
+# --- Functions ---
+
+# Personalized
+mySumFunction = function(n1, n2){
+  sum = n1 + n2
+  return(sum)
+}
+
+mySumFunction(-2, 8.5)
+
+# Default
+?mean
+mean(c(1, 2, 5.4, 8, -12))
